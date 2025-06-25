@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Game {
+struct Game {
     var userPoints: UInt = 0
     var opponentPoints: UInt = 0
 }
