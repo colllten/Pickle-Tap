@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D186043B2E0AF65100F330AD /* PaddlePoints Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D186043A2E0AF65100F330AD /* PaddlePoints Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D186043B2E0AF65100F330AD /* Pickle Tap Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D186043A2E0AF65100F330AD /* Pickle Tap Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +27,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				D186043B2E0AF65100F330AD /* PaddlePoints Watch App.app in Embed Watch Content */,
+				D186043B2E0AF65100F330AD /* Pickle Tap Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,14 +35,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D18604342E0AF65100F330AD /* PaddlePoints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaddlePoints.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D186043A2E0AF65100F330AD /* PaddlePoints Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PaddlePoints Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D18604342E0AF65100F330AD /* Pickle Tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pickle Tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D186043A2E0AF65100F330AD /* Pickle Tap Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pickle Tap Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D186043E2E0AF65100F330AD /* PaddlePoints Watch App */ = {
+		D186043E2E0AF65100F330AD /* Pickle Tap Watch App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "PaddlePoints Watch App";
+			path = "Pickle Tap Watch App";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -61,7 +61,7 @@
 		D186042D2E0AF65000F330AD = {
 			isa = PBXGroup;
 			children = (
-				D186043E2E0AF65100F330AD /* PaddlePoints Watch App */,
+				D186043E2E0AF65100F330AD /* Pickle Tap Watch App */,
 				D18604352E0AF65100F330AD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,8 +69,8 @@
 		D18604352E0AF65100F330AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D18604342E0AF65100F330AD /* PaddlePoints.app */,
-				D186043A2E0AF65100F330AD /* PaddlePoints Watch App.app */,
+				D18604342E0AF65100F330AD /* Pickle Tap.app */,
+				D186043A2E0AF65100F330AD /* Pickle Tap Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,9 +78,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D18604332E0AF65100F330AD /* PaddlePoints */ = {
+		D18604332E0AF65100F330AD /* Pickle Tap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D186044B2E0AF65200F330AD /* Build configuration list for PBXNativeTarget "PaddlePoints" */;
+			buildConfigurationList = D186044B2E0AF65200F330AD /* Build configuration list for PBXNativeTarget "Pickle Tap" */;
 			buildPhases = (
 				D18604322E0AF65100F330AD /* Resources */,
 				D186044A2E0AF65200F330AD /* Embed Watch Content */,
@@ -90,16 +90,16 @@
 			dependencies = (
 				D186043D2E0AF65100F330AD /* PBXTargetDependency */,
 			);
-			name = PaddlePoints;
+			name = "Pickle Tap";
 			packageProductDependencies = (
 			);
 			productName = PaddlePoints;
-			productReference = D18604342E0AF65100F330AD /* PaddlePoints.app */;
+			productReference = D18604342E0AF65100F330AD /* Pickle Tap.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
-		D18604392E0AF65100F330AD /* PaddlePoints Watch App */ = {
+		D18604392E0AF65100F330AD /* Pickle Tap Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D18604472E0AF65200F330AD /* Build configuration list for PBXNativeTarget "PaddlePoints Watch App" */;
+			buildConfigurationList = D18604472E0AF65200F330AD /* Build configuration list for PBXNativeTarget "Pickle Tap Watch App" */;
 			buildPhases = (
 				D18604362E0AF65100F330AD /* Sources */,
 				D18604372E0AF65100F330AD /* Frameworks */,
@@ -110,13 +110,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				D186043E2E0AF65100F330AD /* PaddlePoints Watch App */,
+				D186043E2E0AF65100F330AD /* Pickle Tap Watch App */,
 			);
-			name = "PaddlePoints Watch App";
+			name = "Pickle Tap Watch App";
 			packageProductDependencies = (
 			);
 			productName = "PaddlePoints Watch App";
-			productReference = D186043A2E0AF65100F330AD /* PaddlePoints Watch App.app */;
+			productReference = D186043A2E0AF65100F330AD /* Pickle Tap Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D18604312E0AF65000F330AD /* Build configuration list for PBXProject "PaddlePoints" */;
+			buildConfigurationList = D18604312E0AF65000F330AD /* Build configuration list for PBXProject "Pickle Tap" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -151,8 +151,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D18604332E0AF65100F330AD /* PaddlePoints */,
-				D18604392E0AF65100F330AD /* PaddlePoints Watch App */,
+				D18604332E0AF65100F330AD /* Pickle Tap */,
+				D18604392E0AF65100F330AD /* Pickle Tap Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -187,7 +187,7 @@
 /* Begin PBXTargetDependency section */
 		D186043D2E0AF65100F330AD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D18604392E0AF65100F330AD /* PaddlePoints Watch App */;
+			target = D18604392E0AF65100F330AD /* Pickle Tap Watch App */;
 			targetProxy = D186043C2E0AF65100F330AD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -402,7 +402,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D18604312E0AF65000F330AD /* Build configuration list for PBXProject "PaddlePoints" */ = {
+		D18604312E0AF65000F330AD /* Build configuration list for PBXProject "Pickle Tap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D18604452E0AF65200F330AD /* Debug */,
@@ -411,7 +411,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D18604472E0AF65200F330AD /* Build configuration list for PBXNativeTarget "PaddlePoints Watch App" */ = {
+		D18604472E0AF65200F330AD /* Build configuration list for PBXNativeTarget "Pickle Tap Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D18604482E0AF65200F330AD /* Debug */,
@@ -420,7 +420,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D186044B2E0AF65200F330AD /* Build configuration list for PBXNativeTarget "PaddlePoints" */ = {
+		D186044B2E0AF65200F330AD /* Build configuration list for PBXNativeTarget "Pickle Tap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D186044C2E0AF65200F330AD /* Debug */,
