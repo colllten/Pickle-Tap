@@ -8,7 +8,15 @@
 import Foundation
 
 class GameViewModel: ObservableObject {
-    @Published private var game = Game()
+    @Published var game = Game()
+        
+    public func getUserPoints() -> UInt {
+        return game.userPoints
+    }
+    
+    public func getOpponentPoints() -> UInt {
+        return game.userPoints
+    }
     
     public func addPoint(toUser: Bool) {
         if toUser {
@@ -20,9 +28,13 @@ class GameViewModel: ObservableObject {
     
     public func subtractPoint(toUser: Bool) {
         if toUser {
-            game.userPoints -= 1
+            if game.userPoints > 0 {
+                game.userPoints -= 1
+            }
         } else {
-            game.opponentPoints -= 1
+            if game.opponentPoints > 0 {
+                game.opponentPoints -= 1
+            }
         }
     }
     

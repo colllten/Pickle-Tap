@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ScoreView: View {
-    @State var userPoints = 0
-    @State var oppPoints = 0
+    @ObservedObject private var vm = GameViewModel()
+    
     @State var showSheet = false
     @State var showConfirmReset = false
     
@@ -34,41 +34,37 @@ struct ScoreView: View {
                     .overlay {
                         VStack(alignment: .center) {
                             Text("Opponent")
-                            Text("\(oppPoints)")
+                            Text("\(vm.getOpponentPoints())")
                         }
                         .foregroundStyle(.black)
                         .bold()
                     }
                     .onTapGesture {
-                        oppPoints += 1
+                        vm.addPoint(toUser: false)
                     }
                     .onLongPressGesture {
-                        if oppPoints > 0 {
-                            oppPoints -= 1
-                        }
+                        vm.subtractPoint(toUser: false)
                     }
                     .foregroundStyle(.red)
-                    .sensoryFeedback(.decrease, trigger: oppPoints)
+                    .sensoryFeedback(.decrease, trigger: vm.game.opponentPoints)
                 
                 RoundedRectangle(cornerRadius: 10)
                     .overlay {
                         VStack {
                             Text("You")
-                            Text("\(userPoints)")
+                            Text("\(vm.getUserPoints())")
                         }
                         .foregroundStyle(.black)
                     }
                     .onTapGesture {
-                        userPoints += 1
+                        vm.addPoint(toUser: true)
                     }
                     .onLongPressGesture {
-                        if userPoints > 0 {
-                            userPoints -= 1
-                        }
+                        vm.subtractPoint(toUser: true)
                     }
                     .foregroundStyle(.green)
                     .bold()
-                    .sensoryFeedback(.increase, trigger: userPoints)
+                    .sensoryFeedback(.increase, trigger: vm.game.userPoints)
             }
             .padding(.bottom)
             
@@ -78,8 +74,7 @@ struct ScoreView: View {
             .confirmationDialog("Reset scores?",
                                 isPresented: $showConfirmReset) {
                 Button("Reset", role: .destructive) {
-                    userPoints = 0
-                    oppPoints = 0
+                    vm.resetPoints()
                 }
             }
                                 .frame(maxWidth: 100)
