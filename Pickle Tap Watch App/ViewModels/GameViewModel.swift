@@ -15,7 +15,7 @@ class GameViewModel: ObservableObject {
     }
     
     public func getOpponentPoints() -> UInt {
-        return game.userPoints
+        return game.opponentPoints
     }
     
     public func addPoint(toUser: Bool) {
