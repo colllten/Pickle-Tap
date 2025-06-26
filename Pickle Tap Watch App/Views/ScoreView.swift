@@ -56,14 +56,20 @@ struct ScoreView: View {
     
     private func pointsView(for player: String) -> some View {
         let points = player == "You" ? vm.getUserPoints() : vm.getOpponentPoints()
+        let colors = player == "You" ? [Color.green, Color.white] : [Color.red, Color.white]
         
         return RoundedRectangle(cornerRadius: 10)
+            .fill((player == "You" ? Color.green : Color.red).opacity(0.8)) // Light background
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(player == "You" ? Color.green : Color.red, lineWidth: 3)
+            )
             .overlay {
-                VStack(alignment: .center) {
+                VStack {
                     Text(player)
                     Text("\(points)")
                 }
-                .foregroundStyle(.black)
+                .foregroundStyle(Color.black)
                 .bold()
             }
             .onTapGesture {
@@ -72,9 +78,9 @@ struct ScoreView: View {
             .onLongPressGesture {
                 vm.subtractPoint(toUser: player == "You")
             }
-            .foregroundStyle(player == "You" ? .green : .red)
             .sensoryFeedback(player == "You" ? .increase : .decrease, trigger: points)
     }
+
     
     private var resetButton: some View {
         Button("Reset") {
